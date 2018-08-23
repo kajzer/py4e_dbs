@@ -10,7 +10,10 @@ pomodoro_rename_files
 linked list implementation in python
 
 **Iterable**  
-build a Basic Python Iterator
+build a Basic Python Iterator  
+
+**tracks**
+application will read an iTunes export file in XML and produce a properly normalized database
 
 
 *Made on basis of py4e.com, Udacity, python notes for professionals*
