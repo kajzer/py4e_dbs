@@ -20,4 +20,7 @@ application will read an iTunes export file in XML and produce a properly normal
 script will parse json format and setup many to many db with courses and attendees with parsed data  
 
 
+**send_sms**  
+Sending sms with twilio API - for this to work script needs valid credentails
+
 *Made on basis of py4e.com, Udacity, python notes for professionals*
