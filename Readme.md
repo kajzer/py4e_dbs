@@ -16,4 +16,8 @@ build a Basic Python Iterator
 application will read an iTunes export file in XML and produce a properly normalized database
 
 
+**many_to_many**  
+script will parse json format and setup many to many db with courses and attendees with parsed data  
+
+
 *Made on basis of py4e.com, Udacity, python notes for professionals*
