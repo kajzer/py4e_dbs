@@ -19,8 +19,11 @@ application will read an iTunes export file in XML and produce a properly normal
 **many_to_many**  
 script will parse json format and setup many to many db with courses and attendees with parsed data  
 
-
 **send_sms**  
 Sending sms with twilio API - for this to work script needs valid credentails
+
+
+**profanity_checker**
+Simple script to read from a txt file and hit url with contents to check if text contains curse words.
 
 *Made on basis of py4e.com, Udacity, python notes for professionals*
