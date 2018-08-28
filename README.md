@@ -26,4 +26,8 @@ Sending sms with twilio API - for this to work script needs valid credentails
 **profanity_checker**
 Simple script to read from a txt file and hit url with contents to check if text contains curse words.
 
+
+**movies**  
+Very basic one page movie site
+
 *Made on basis of py4e.com, Udacity, python notes for professionals*
