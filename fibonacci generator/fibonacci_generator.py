@@ -10,6 +10,11 @@ def fib():
 def main():
     # checking if fib is a generator
     if type(fib()) == types.GeneratorType:
+        try:
+            number = int(sys.argv[1])
+        except:
+            print("you didn't give valid input!")
+            exit()
         print("Generating", sys.argv[1], "numbers in Fibonacci series...")
         counter = 0
         for number in fib():

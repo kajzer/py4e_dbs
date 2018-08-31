@@ -24,7 +24,7 @@ Sending sms with twilio API - for this to work script needs valid credentails
 Simple script to read from a txt file and hit url with contents to check if text contains curse words.
 
 **Fibonacci generator** 
-generate first n numbers from Fibonacci series. Can be run as executable ./fibonacci_generator.py [#_of_numbers_in_sequance]. Uses sys.argv. 
+generate first n numbers from Fibonacci series. Can be run as executable ./fibonacci_generator.py [#_of_numbers_in_sequance]. Uses sys.argv with try except block for validation. 
 
 
 *Made on basis of py4e.com, Udacity, python notes for professionals*
