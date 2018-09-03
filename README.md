@@ -34,4 +34,8 @@ Insecure password holder. Will copy to clipboard password for given account. Usa
 **[quiz generator](./quiz_generator)**
 Generating different quizzes with multiple choice questions.
 
+**[logging_to_consoe](./logging_to_console)** 
+Logging every step of factorial to console
+
+
 *Made on basis of py4e.com, Udacity, python notes for professionals, automate the borring stuff with python*
