@@ -31,4 +31,7 @@ generate first n numbers from Fibonacci series. Can be run as executable ./fibon
 **[passwords_copy](./passwords_copy)**  
 Insecure password holder. Will copy to clipboard password for given account. Usage: ./pw.py [some_account]. To run as executable permissions are required: sudo chmod +x pw.py  
 
+**[quiz generator](./quiz_generator)**
+Generating different quizzes with multiple choice questions.
+
 *Made on basis of py4e.com, Udacity, python notes for professionals, automate the borring stuff with python*
