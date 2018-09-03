@@ -2,7 +2,7 @@
 # randomQuizGenerator.py - Creates 15 quizzes with questions and answers in
 # random order, along with the answer key.
 
-import random
+import random, os
 
 capitals = {'Alabama': 'Montgomery', 'Alaska': 'Juneau', 'Arizona': 'Phoenix',
    'Arkansas': 'Little Rock', 'California': 'Sacramento', 'Colorado': 'Denver',
@@ -23,6 +23,8 @@ capitals = {'Alabama': 'Montgomery', 'Alaska': 'Juneau', 'Arizona': 'Phoenix',
    'Charleston', 'Wisconsin': 'Madison', 'Wyoming': 'Cheyenne'}
 
 def main():
+    if not os.path.exists('./generated'): 
+        os.makedirs('./generated')
     for quizNum in range(14):
         # Create the quiz and answer key files
         quizFile = open('./generated/capitalsquiz%s.txt' % (quizNum + 1), 'w')
