@@ -28,5 +28,7 @@ Simple script to read from a txt file and hit url with contents to check if text
 **[Fibonacci generator](./fibonacci_generator)** 
 generate first n numbers from Fibonacci series. Can be run as executable ./fibonacci_generator.py [#_of_numbers_in_sequance]. Uses sys.argv with try except block for validation and checking input errors. 
 
+**[passwords_copy](./passwords_copy)**  
+Insecure password holder. Will copy to clipboard password for given account. Usage: ./pw.py [some_account]. To run as executable permissions are required: sudo chmod +x pw.py  
 
-*Made on basis of py4e.com, Udacity, python notes for professionals*
+*Made on basis of py4e.com, Udacity, python notes for professionals, automate the borring stuff with python*
