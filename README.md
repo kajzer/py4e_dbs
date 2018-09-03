@@ -41,5 +41,9 @@ Logging every step of factorial to console
 Opens google maps to specified location from command line arguments  
 Usage example: ./mapit.py 870 Valencia St, San Francisco, CA94110
 
+**[excel automation](./excel_automation)**  
+Script to automate *xlsx files. Requires OpenPyXL (pip3 install openpyxl)  
+xlsx_repo.py - opening, getting sheets, traversing, etc.    
+read_data_from_xlsx.py - 
 
 *Made on basis of py4e.com, Udacity, python notes for professionals, automate the borring stuff with python*
