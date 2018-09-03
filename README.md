@@ -37,5 +37,9 @@ Generating different quizzes with multiple choice questions.
 **[logging_to_consoe](./logging_to_console)** 
 Logging every step of factorial to console
 
+**[map it](./mapit)**  
+Opens google maps to specified location from command line arguments  
+Usage example: ./mapit.py 870 Valencia St, San Francisco, CA94110
+
 
 *Made on basis of py4e.com, Udacity, python notes for professionals, automate the borring stuff with python*
