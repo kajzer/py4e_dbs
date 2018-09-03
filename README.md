@@ -45,6 +45,7 @@ Need to install: pip install pyperclip
 **[excel automation](./excel_automation)**  
 Script to automate *xlsx files. Requires OpenPyXL (pip3 install openpyxl)  
 xlsx_repo.py - opening, getting sheets, traversing, etc.    
-read_data_from_xlsx.py - 
+read_data_from_xlsx.py - read from the census spreadsheet file and calculate statistics for each county  
+
 
 *Made on basis of py4e.com, Udacity, python notes for professionals, automate the borring stuff with python*
