@@ -48,8 +48,12 @@ xlsx_repo.py - opening, getting sheets, traversing, etc.
 read_data_from_xlsx.py - read from the census spreadsheet file and calculate statistics for each county  
 
 **[pdf_combine](./pdf_combine)**  
-Combine pages without cover page from many *.pdf files into a single *.pdf
+Combine pages without cover page from many *.pdf files into a single *.pdf  
+Requires PyPDF2: sudo pip3 install PyPDF2  
 
+**[get weather](./get_weather)**  
+Gets weather from openweathermap (only sample) for current location provided in command line arguments (needs API key - in this form always gets London)  
+Usage: python3 get_weather.py London
 
 
 *Made on basis of py4e.com, Udacity, python notes for professionals, automate the borring stuff with python*
