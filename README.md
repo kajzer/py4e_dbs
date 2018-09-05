@@ -1,7 +1,9 @@
-# Excercises with python code
+# Python scripts
 
-**[counting_emails_db](./counting_emails_db)**  
-run db_connect.py - connect to db. Parse file for emails (press enter if no file there is a fall back). Add domain names of emails to db.
+## Counting emails
+Link: **[counting_emails_db](./counting_emails_db)**  
+**Used:** SQL, txt file parsing  
+run db_connect.py - connect to db. Parse file for emails (press enter if no file, there is a fall back). The script will add domain names of emails to db.
 
 **[many_to_many](./many_to_many)**  
 script will parse json format and setup many to many db with courses and attendees with parsed data  
