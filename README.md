@@ -13,6 +13,11 @@ Link: **[many_to_many](./many_to_many)**
 **Used:** SQL, JSON  
 script will parse json format and setup many to many db with courses and attendees with parsed data  
 
+## Hangman Game
+Link: **[Hangman Game](./hangman)**  
+**Used:** random, requests, urllib, json, string  
+Game of hangman with a random word taken from an API.
+
 ## Excel file handling
 Link: **[excel automation](./excel_automation)**  
 **Used:** openpyxl, pprint  

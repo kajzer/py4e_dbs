@@ -48,6 +48,8 @@ class Colorize:
     codes = {
             'green': '\033[1;32;40m',
             'magenta': '\033[0;35;40m',
+            'red': '\033[0;31;40m',
+            'blue': '\033[0;34;40m',
             'reset_seq': '\033[0m'
     }
     
@@ -83,7 +85,7 @@ def getLetterCount():
                 letters = 4
             return letters
         except:
-            print('Something went wrong with Your inpu. Please give a number!')
+            print(Colorize.text('Something went wrong with Your inpu. Please give a number!', 'red'))
             continue
 
 def displayBoard(missedLetters, correctLetters, secretWord):
@@ -108,6 +110,23 @@ def displayBoard(missedLetters, correctLetters, secretWord):
         print(letter, end=' ')
     print()
     
+def getGuess(allreadyGuessed):
+    # returnes the letter the player entered
+    while True:
+        guess = input('Guess a letter: ')
+        guess = guess.lower()
+        if guess not in string.ascii_letters:
+            print(Colorize.text('Please fill in a letter!', 'red'))
+            continue
+        elif guess in allreadyGuessed:
+            print(Colorize.text('You have allready guessed that letter. Choose again', 'blue'))
+        else:
+            return guess
+
+def playAgain():
+    # This function returns True if the player wants to play again otherwise false
+    return input('Do you want to play again? (yes or no) ').lower().startswith('y')
+    
 
 def main():
     print(Colorize.text('================== H A N G M A N ======================', 'green'))
@@ -119,12 +138,43 @@ def main():
     countL = getLetterCount()
     secretWord = getRandomWord(getWords(countL))
     
-    print(secretWord)
-    
     while True:
         displayBoard(missedLetters, correctLetters, secretWord)
+        # get guess from a user
+        guess = getGuess(missedLetters + correctLetters)
         
-        break
+        if guess in secretWord:
+            correctLetters += guess
+            # check if player has won
+            foundAllLetters = True
+            for i in range(len(secretWord)):
+                if secretWord[i] not in correctLetters:
+                    foundAllLetters = False
+                    break
+            if foundAllLetters:
+                print('Yes! The secret word is "' + secretWord + '"! You have won!')
+                gameIsDone = True
+        else:
+            missedLetters = missedLetters + guess
+            
+            # check if player has guessed to manny times and lost.
+            if len(missedLetters) == len(HANGMAN_PICS) - 1:
+                displayBoard(missedLetters, correctLetters, secretWord)
+                print('You have run out of guesses!\nAfter ' + str(len(missedLetters)) + ' missed guesses and ' +
+                str(len(correctLetters)) + ' correct guesses, the word was "' + secretWord + '"')
+                gameIsDone = True
+        
+        # Ask the player if they want to play again but only if the game is done
+        if gameIsDone:
+            if playAgain():
+                missedLetters = ''
+                correctLetters = ''
+                gameIsDone = False
+                
+                countL = getLetterCount()
+                secretWord = getRandomWord(getWords(countL))
+            else:
+                break
     
     
 if __name__ == "__main__":
