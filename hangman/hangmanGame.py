@@ -85,6 +85,28 @@ def getLetterCount():
         except:
             print('Something went wrong with Your inpu. Please give a number!')
             continue
+
+def displayBoard(missedLetters, correctLetters, secretWord):
+    print(HANGMAN_PICS[len(missedLetters)])
+    print()
+    
+    print('Missed letters:', end=' ')
+    for letter in missedLetters:
+        print(letter, end=' ')
+    print()
+    
+    blanks = '_' * len(secretWord)
+    
+    # replace blanks with guessed correct letters
+    for i in range(len(secretWord)):
+        if secretWord[i] in correctLetters:
+            blanks = blanks[:i] + secretWord[i] + blanks[i+1:]
+    
+    # show secret word with spaces in between
+    print('Your word:', end=' ')
+    for letter in blanks:
+        print(letter, end=' ')
+    print()
     
 
 def main():
@@ -92,7 +114,6 @@ def main():
     print(Colorize.text(INTRO_TEXT, 'magenta'))
     missedLetters = ''
     correctLetters = ''
-    secretWord = ''
     gameIsDone = False
     
     countL = getLetterCount()
@@ -100,6 +121,10 @@ def main():
     
     print(secretWord)
     
+    while True:
+        displayBoard(missedLetters, correctLetters, secretWord)
+        
+        break
     
     
 if __name__ == "__main__":
