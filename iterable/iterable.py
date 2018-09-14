@@ -38,7 +38,7 @@ def my_gen(text):
 for char in my_gen('abcdefg'):
     print(char)
     
-# using generator expression
+# using generator expression and adding some text to test new enviroment
 print("=======Generator expression=========")
 def my_genexp(text):
     return (char.upper() for char in text)
