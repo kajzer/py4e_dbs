@@ -1,6 +1,6 @@
 import random
 # Using class
-print("=======Class=========") 
+print("=========Class=========")
 class Counter:
     def __init__(self, low, high):
         self.current = low
