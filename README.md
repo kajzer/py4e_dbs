@@ -30,6 +30,11 @@ Link: **[tracks](./tracks)**
 **Used:** SQL, XML  
 application will read an iTunes export file in XML and produce a properly normalized database
 
+## Get data from my API and parse them
+Link: **[get data from API](./get_data_from_api)**  
+**Used:** JSON, Python, Heroku, [build by me Rails API](https://github.com/kajzer/school_api)  
+Runs get request to my Rails API deployed on heroku and parses response and creates Student objects. All namespaced in a class.
+
 ## PDFs handling
 Link: **[pdf_combine](./pdf_combine)**  
 **Used:** PyPDF2, os, glob  
